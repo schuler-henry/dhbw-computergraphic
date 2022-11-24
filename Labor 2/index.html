@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>
+      Transformation von Bilder
+    </h1>
+    <input type="file" accept=".jpg, .png, .gif" id="inputImage" onchange="setImage(this)">
+    <div id="imageWrapper">
+      <canvas id="displayImage"></canvas>
+    </div>
+    <div id="optionList">
+      <span>
+        <input type="radio" name="effect" value="default" onclick="addFilter('default')" checked>
+        <label for="default">Default</label>
+      </span>
+      <span>
+        <input type="radio" name="effect" value="grayscale" onclick="addFilter('grayscale')">
+        <label for="grayscale">Grayscale</label>
+      </span>
+      <span>
+        <input type="radio" name="effect" value="inverted" onclick="addFilter('inverted')">
+        <label for="inverted">Inverted</label>
+      </span>
+      <span>
+        <input type="radio" name="effect" value="sepia" onclick="addFilter('sepia')">
+        <label for="sepia">Sepia</label>
+      </span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

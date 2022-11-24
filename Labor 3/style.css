@@ -1,0 +1,38 @@
+html, body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+  margin: 0 auto; 
+  width: 55vh;
+  gap: 5vh;
+}
+
+#canvasElement {
+  border: 1px solid white;
+  width: 55vh;
+  height: 55vh;
+}
+
+.navigation {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation button {
+  width: 48%;
+  height: 100%;
+  padding: 10px;
+}

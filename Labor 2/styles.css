@@ -1,0 +1,47 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
+}
+
+body div {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: darkblue;
+  font-weight: light;
+  border-radius: 10px;
+}
+
+#inputImage {
+  color: transparent;
+  margin: 10px 0;
+}
+
+#inputImage::-webkit-file-upload-button {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#imageWrapper {
+  overflow: auto;
+  display: flex;
+}
+
+#optionList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+}

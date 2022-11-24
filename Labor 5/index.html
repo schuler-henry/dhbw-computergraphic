@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <h1>
+      Clipping mit Cohen-Sutherland
+    </h1>
+    <div class="content">
+      <canvas id="canvasElement" width="500" height="500"></canvas>
+      <div>
+        <p>
+          Erstellen Sie eine Linie, indem Sie die rechte oder linke Maustaste ausgehend von einer Startposition gedrückt halten, bis zum Erreichen der Endposition.
+
+          Die Linienfarbe und die Linienbreite können Sie über das Steuerungspanel der Applikation festlegen:
+        </p>
+
+        <div class="inputDiv" id="inputDiv">
+          <label for="inputDiv">Linienfarbe und Linienbreite</label>
+          <label for="color">Linienfarbe:</label>
+          <input type="color" id="color" value="#000000">
+          <label for="width">Linienbreite:</label>
+          <input type="range" id="width" name="width" min="1" max="10" value="1">
+      </div>
+      <button id="clipButton">Clip line</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

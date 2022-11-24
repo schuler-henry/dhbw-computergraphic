@@ -1,0 +1,65 @@
+html {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+#canvasElement {
+  width: 50vw;
+  margin: 20px;
+  border: 1px solid;
+}
+
+.content > div {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > div p {
+  background-color: #505050;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.inputDiv {
+  max-width: calc(50vw - 40px);
+  border: 1px solid;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.inputDiv input {
+  max-width: 30%;
+}
+
+.inputDiv input:first-of-type {
+  margin-right: 20px;
+}
+
+.content button {
+  width: fit-content;
+  align-self: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+label[for=inputDiv] {
+  position: absolute;
+  left: 20px;
+  top: -12px;
+  font-size: 20px;
+  background-color: gray;
+}
